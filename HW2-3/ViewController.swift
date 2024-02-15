@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // MARK: - IB Outlets
     @IBOutlet var colorView: UIView!
     
     @IBOutlet var redSlider: UISlider!
@@ -19,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet var greenValue: UILabel!
     @IBOutlet var blueValue: UILabel!
     
+    // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,9 +28,10 @@ class ViewController: UIViewController {
     }
     
     override func viewWillLayoutSubviews() {
-        colorView.layer.cornerRadius = 10
+        colorView.layer.cornerRadius = 20
     }
     
+    // MARK: - IB Actions
     @IBAction func actionSlider(slider sender: UISlider) {
         
         switch sender {

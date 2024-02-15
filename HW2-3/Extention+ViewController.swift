@@ -17,8 +17,8 @@ extension ViewController{
         blueSlider.minimumTrackTintColor = .blue
         
         redSlider.value = 0.05
-        greenSlider.value = 0.27
-        blueSlider.value = 0.49
+        greenSlider.value = 0.30
+        blueSlider.value = 0.50
         
         // создаем связь с методом actionSlider
         [redSlider, greenSlider, blueSlider].forEach {
